@@ -8,4 +8,8 @@ import { Component, VERSION } from '@angular/core';
 export class AppComponent {
   name = 'Angular ' + VERSION.major;
   hunter = 'hunter gogo';
+
+  parentRun() {
+    console.log('点击子组件的button触发父组件中的方法');
+  }
 }
