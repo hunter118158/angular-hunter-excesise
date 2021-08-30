@@ -18,8 +18,10 @@ export class HelloComponent {
   @Input() name: string;
   @Input() hunter: string;
   @Input() childRun: any;
+  @Input() all: any;
 
   ngOnInit() {
     console.log(this.hunter);
+    console.log(this.all.name);
   }
 }
