@@ -6,6 +6,16 @@ import { Output, EventEmitter } from '@angular/core';
   template: `
     <h1>Hello {{ name }}!</h1>
     <button (click)="childRun()">子组件</button>
+    <table border="1">
+      <tr>
+        <td>姓名</td>
+        <td>年龄</td>
+      </tr>
+      <tr>
+        <td>hunter</td>
+        <td>16</td>
+      </tr>
+    </table>
   `,
   styles: [
     `

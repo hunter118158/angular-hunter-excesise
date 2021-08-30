@@ -13,10 +13,12 @@ export class AppComponent {
 
   parentRun() {
     console.log('点击子组件的button触发父组件中的方法');
-    this.son.sonfun();
   }
 
   runParent(val) {
     console.log(val);
+  }
+  update() {
+    console.log(this.son.hunter);
   }
 }
