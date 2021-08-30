@@ -12,4 +12,8 @@ export class AppComponent {
   parentRun() {
     console.log('点击子组件的button触发父组件中的方法');
   }
+
+  runParent(val) {
+    console.log(val);
+  }
 }

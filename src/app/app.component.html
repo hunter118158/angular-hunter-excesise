@@ -1,4 +1,4 @@
-<hello name="{{ name }}" [hunter]="hunter" [childRun]="parentRun" [all]="this"></hello>
+<hello name="{{ name }}" [hunter]="hunter" [childRun]="parentRun" [all]="this" (outer)="runParent($event)"></hello>
 <p>
   Start editing to see some magic happen :)
 </p>
