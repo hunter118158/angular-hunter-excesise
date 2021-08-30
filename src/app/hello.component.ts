@@ -31,4 +31,8 @@ export class HelloComponent {
   sendParent() {
     this.outer.emit('子组件传父组件值');
   }
+
+  sonfun() {
+    console.log('子组件函数');
+  }
 }
