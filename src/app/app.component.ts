@@ -29,6 +29,7 @@ export class AppComponent {
 
         main {
           position: relative;
+          height: 100vh;
         }
 
         main nav {
@@ -37,7 +38,7 @@ export class AppComponent {
           left: 0;
           top: 0;
           bottom: 0;
-          background: blueviolet;
+          background: blue;
         }
       </style>
     </head>
