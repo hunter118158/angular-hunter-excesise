@@ -4,7 +4,7 @@ import { Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'hello',
   template: `
-    <div [innerHTML]="showHtml"></div>
+    <!--div [innerHTML]="showHtml"></div-->
     <!--h1>Hello {{ name }}!</h1>
     <button (click)="childRun()">子组件</button>
     <table border="1">
