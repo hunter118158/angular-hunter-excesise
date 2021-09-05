@@ -28,24 +28,17 @@ export class AppComponent {
         }
 
         main {
-          position: relative;
+          display: flex;
           height: 100vh;
         }
 
         main nav {
+          background: blue;
           width: 80px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          background: blueviolet;
         }
 
         main article{
-          background: #ccc;
-          padding-left: 90px;
-          background-clip: content-box;
-          height: 100vh;
+
         }
 
       </style>
@@ -53,7 +46,7 @@ export class AppComponent {
 
     <body>
       <main>
-        <nav></nav>
+        <nav>112</nav>
         <article>cc</article>
       </main>
     </body>
