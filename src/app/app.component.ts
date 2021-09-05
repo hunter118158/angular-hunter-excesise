@@ -38,15 +38,23 @@ export class AppComponent {
           left: 0;
           top: 0;
           bottom: 0;
-          background: blue;
+          background: blueviolet;
         }
+
+        main article{
+          background: #ccc;
+          padding-left: 90px;
+          background-clip: content-box;
+          height: 100vh;
+        }
+
       </style>
     </head>
 
     <body>
       <main>
         <nav></nav>
-        <article></article>
+        <article>cc</article>
       </main>
     </body>
   </html>
