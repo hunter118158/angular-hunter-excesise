@@ -4,15 +4,9 @@ import { Output, EventEmitter } from '@angular/core';
 @Component({
   selector: 'hello',
   template: `
-    <h1>Hello {{ name }}!</h1>
-    <button (click)="onEditClick()">子组件</button>
-    <div *ngIf="canEdit; else noEdit">
-      <p>You can edit the following paragraph.</p>
-    </div>
-    <ng-template #noEdit>
-      <p>The following paragraph is read only. Try clicking the button!</p>
-    </ng-template>
-    <p [contentEditable]="canEdit">{{ message }}</p>
+    <!--div [innerHTML]="showHtml"></div-->
+    <!--h1>Hello {{ name }}!</h1>
+    <button (click)="childRun()">子组件</button>
     <table border="1">
       <tr>
         <td>姓名</td>
@@ -22,7 +16,7 @@ import { Output, EventEmitter } from '@angular/core';
         <td>hunter</td>
         <td>16</td>
       </tr>
-    </table>
+    </table-->
   `
 })
 export class HelloComponent {
@@ -31,8 +25,6 @@ export class HelloComponent {
   @Input() childRun: any;
   @Input() all: any;
   @Output() private outer = new EventEmitter<string>();
-  message = "I'm read only!";
-  canEdit = false;
 
   showHtml = `
   <!DOCTYPE html>
@@ -53,23 +45,17 @@ export class HelloComponent {
         main {
           position: relative;
         }
-
-        main nav {
-          width: 80px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          bottom: 0;
-          background: blueviolet;
-        }
       </style>
     </head>
 
     <body>
       <main>
-        <nav></nav>
-        <article></article>
       </main>
+      <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+      </footer>
     </body>
   </html>
 `;
@@ -86,14 +72,5 @@ export class HelloComponent {
 
   sonfun() {
     console.log('子组件函数');
-  }
-
-  onEditClick() {
-    this.canEdit = !this.canEdit;
-    if (this.canEdit) {
-      this.message = 'You can edit me!';
-    } else {
-      this.message = "I'm read only!";
-    }
   }
 }

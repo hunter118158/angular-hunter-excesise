@@ -27,28 +27,37 @@ export class AppComponent {
           margin: 0;
         }
 
-        main {
-          display: flex;
-          height: 100vh;
-        }
+      main {
+        display: flex;
+        height: 100vh;
+        background: #ddd;
+      }
+      footer {
+        position: flexd;
+        width: 100vw;
+        height: 50px;
+        background: linear-gradient(to bottom, #f3f3f3, #ddd, #f3f3f3);
+        boerder-top: solid 1px #ddd;
+      }
 
-        main nav {
-          background: blue;
-          width: 80px;
-        }
-
-        main article{
-
-        }
+      footer div{
+        float: left;
+        width: 33%;
+        height: 100%;
+        background: blue;
+      }
 
       </style>
     </head>
 
     <body>
       <main>
-        <nav>112</nav>
-        <article>cc</article>
       </main>
+      <footer>
+        <div></div>
+        <div></div>
+        <div></div>
+      </footer>
     </body>
   </html>
 `;
